@@ -14,7 +14,7 @@ export default {
 
 <style scoped>
 .container {
-  /* background: linear-gradient(152.41deg, #014D89 22.18%, #001451 97.61%); */
+  background: linear-gradient(152.41deg, #014D89 22.18%, #001451 97.61%);
   padding: 15px;
   color: #fff;
 }

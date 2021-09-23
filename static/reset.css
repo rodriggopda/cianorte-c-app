@@ -11,7 +11,9 @@
 
 html,
 body {
+  min-height: 100vh;
   background: linear-gradient(152.41deg, #014D89 22.18%, #001451 97.61%);
+  background-repeat: no-repeat;
 }
 
 .uppercase {
