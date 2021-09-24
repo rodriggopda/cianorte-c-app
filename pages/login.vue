@@ -51,6 +51,9 @@ export default {
   methods: {
     login () {
       localStorage.setItem('auth', true)
+      if (localStorage.getItem('auth')) {
+        this.$router.push('/')
+      }
     }
   }
 }
