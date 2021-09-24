@@ -12,7 +12,7 @@
           <label for="password"></label>
           <input type="password" class="rounded-bottom" id="password" placeholder="Senha" v-model="user.password">
         </div>
-        <button class="form-button rounded-full uppercase font-small font-500" type="button">Entrar</button>
+        <button class="form-button rounded-full uppercase font-small font-500" type="button" @click="login">Entrar</button>
         <div class="mt-30">
           <h2 class="mb-20px uppercase font-small font-500">Ou utilize:</h2>
           <div class="double-buttons">
@@ -47,6 +47,11 @@ export default {
   mounted () {
     const payload = { current: this.$route.path, nextRoute: '/register/about-you' }
     this.$store.commit('steps/changeRoute', payload)
+  },
+  methods: {
+    login () {
+      localStorage.setItem('auth', true)
+    }
   }
 }
 </script>
