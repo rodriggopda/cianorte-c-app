@@ -10,7 +10,9 @@
 <script>
 export default {
   middleware ({ redirect }) {
-    redirect('/login')
+    if (!localStorage.getItem('auth')) {
+      redirect('/login')
+    }
   }
 }
 </script>
