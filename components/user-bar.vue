@@ -12,7 +12,7 @@
 export default {
   methods: {
     myAccount () {
-      this.$router.push('/minha-conta')
+      this.$router.push('/my-account')
     }
   }
 }
