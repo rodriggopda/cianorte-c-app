@@ -56,7 +56,7 @@ export default {
       display: "standalone",
       orientation: "portrait",
       scope: "/",
-      start_url: "/",
+      start_url: "/login",
       icon: [
         {
           "src": "/android-chrome-192x192.png",
