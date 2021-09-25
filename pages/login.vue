@@ -68,6 +68,7 @@ export default {
 
 .top-content {
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: space-evenly;
 }
@@ -79,7 +80,7 @@ export default {
 
 .brand {
   text-align: center;
-  margin: 15% 0;
+  margin: 20px 0;
 }
 
 .form-login {
